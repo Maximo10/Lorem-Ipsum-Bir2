@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.conte {
+    max-width: 1300px;
+}
+/*Menu*/        
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #293144;
+    padding: 20px;
+    color: white;
+}
+.header .logo img {
+    height:80px;
+    width:80px;
+    border-radius: 25%;
+}
+.header nav button {
+    background-color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.consulta button {
+    border-radius: 23px;
+    color: black;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+/*Baner*/
+.hero {
+    background-image: url("./baner.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: start;      
+    justify-content:    start;   
+    padding: 40px;               
+    color: #fff;
+    position: relative;
+}
+.hero .tex {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;              
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+.hero .tex h2,
+.hero .tex p {
+    margin: 0 0 10px 0;
+}
+.tex button {
+    padding: 10px 20px;
+    background-color: #c69d09;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+/*Apartado de Servicios*/        
+.Serv {
+    margin-top: 40px;
+}
+.Serv h2{
+    text-align: center;
+}
+/*Reclamaciones*/
+.recla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "items1 items2 items2 items3"
+        "items4 items2 items2 items5"
+        "items6 items7 items8 items9";
+    gap: 20px;
+    padding: 10px;
+}
+.recla img {
+    width: auto;
+    height: auto;
+    max-height: 150px; 
+    margin-bottom: 10px;
+    border-radius: 8px;
+} 
+.items1 {
+    grid-area: items1;
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items1 h3 {margin-top: 5px;}
+.items2 {
+    grid-area: items2; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items2 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+.items2 h3 {margin-top: 30px;}
+.items3 {
+    grid-area: items3; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items3 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}        
+.items3 h3 {margin-top: 5px;}
+.items4 {
+    grid-area: items4; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items4 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}        
+.items4 h3 {margin-top: 5px;}
+.items5 {
+    grid-area: items5; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items5 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+.items5 h3 {margin-top: 5px;}
+.items6 {
+    grid-area: items6; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items6 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+.items6 h3 {margin-top: 5px;}
+.items7 {
+    grid-area: items7; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items7 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}        
+.items7 h3 {margin-top: 5px;}
+.items8 {
+    grid-area: items8; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items8 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+.items8 h3 {margin-top: 15px;}
+.items9 {
+    grid-area: items9; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #E3C465;
+}
+.items9 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+}
+.items9 h3 {margin-top: 15px;}
+/*Llamada a Accion*/
+.cta {
+    text-align: start;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+.cta h2{text-align: start;}
+.cta button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #c69d09;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*Ventajas*/        
+.venta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+.venta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3C465;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.venta-item img {
+    width: 100%;              
+    height: auto;                         
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+/*Testimonios*/
+.Testi {
+  background-color: #2c3e50;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+.Testi > h2 {
+  grid-column: 1 / -1; /* Que el título ocupe toda la fila */
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+/* Grid con 4 columnas */
+.Testi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+/* Cada tarjeta Testi-item */
+.Testi-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* Imagen dentro del Testi-item */
+.Testi-item img#icono {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+/* Nombre */
+.Testi-item h3#nombre {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+/* Texto Testimonio */
+.Testi-item p#testimonio {
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+/* Botón en la fila completa, centrado */
+#new_test {
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+  justify-self: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#new_test img {
+  display: block;
+}
+/*Preguntas Frecuentes*/
+.Pregu {
+    margin-top: 40px
+}
+.pre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "area1 ."
+        ". area2"
+        "area3 ."
+        ". area4";
+    gap: 20px;
+}
+.item1,.item2,.item3,.item4{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.item1 {grid-area: area1;}
+.item2 {grid-area: area2;}
+.item3 {grid-area: area3;}
+.item4 {grid-area: area4;}
+.pie {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 20px;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+/*Pie de Pagina*/
+.pie-izq,.pie-cen,.pie-der {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+.pie h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.pie p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+}
+.pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.pie-izq img {
+    height:180px;
+    width:180px;
+    border-radius: 25%;
+}
+.pie-copy {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ddd;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+#new_test {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#new_test img {
+    display: block;
+    margin: 0 5px;
+}
